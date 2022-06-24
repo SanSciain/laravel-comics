@@ -1,0 +1,42 @@
+header {
+    .upper {
+        background-color: $main-color;
+        .container{
+            padding: 0.5rem 0;
+            display: flex;
+            justify-content: flex-end;
+            color: white;
+        }
+    }
+
+    .bottom {
+        padding: 1rem;
+        .container {
+            display: flex;
+            justify-content: space-between;
+
+            .logo{
+                width: 50px;
+            }
+
+            
+            ul {
+                    width: calc(100% - 50px);
+                    padding-left: 2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    a {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 0.7rem;
+                        color: inherit;
+                    }
+                }
+
+        }
+
+
+    }
+}
