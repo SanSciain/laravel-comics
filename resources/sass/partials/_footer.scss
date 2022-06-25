@@ -1,0 +1,92 @@
+footer {
+
+    .upper {
+        background-image: url("../img/footer-bg.jpg");
+
+        .container {
+            height:  450px;
+            display: flex;
+            justify-content: space-between;
+
+            .menu-wrapper {
+                width: 50%;
+                padding: 2rem 0;
+
+                .menu {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    color: white;
+                    font-size: 0.7rem;
+                    max-width: fit-content;
+    
+                    li{
+                        padding: 2rem;
+    
+                        h3 {
+                            text-transform: uppercase;
+                            font-weight: bold;
+                        }
+    
+                        .sub-menu {
+                            li{
+                                padding: 0.2rem 0;
+                                color: lightgrey;
+                            }
+                        }
+                    }
+    
+    
+                }
+            }
+
+
+            .logo-bg {
+                width: 50%;
+                height: 100%;
+                
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+    }
+
+
+    .bottom {
+        background-color: #303030;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+
+            .btn {
+                border: 2px solid $main-color;
+                padding: 0.5rem;
+                color: white;
+                text-transform: uppercase;
+            }
+
+            .contacts-wrapper {
+                display: flex;
+                align-items: center;
+
+                a {
+                    color: $main-color;
+                    text-transform: uppercase;
+                    margin: 1rem;
+                }
+
+                .img-container {
+                    width: 30px;
+                    margin: 0 .5rem;
+                }
+            }
+        }
+    }
+}
