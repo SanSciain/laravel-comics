@@ -1,0 +1,86 @@
+.thumb {
+    background-color: $main-color;
+    height: 40px;
+
+    .img-container {
+        height: 200px;
+        position: relative;
+        top: -180px;
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+}
+
+.desc-add {
+    width: 100%;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+    }
+    
+
+    .desc {
+        width: 70%;
+
+        h2 {
+            text-transform: uppercase;
+            color: $main-color;
+        }
+
+        .availability {
+            padding: 0.5rem 1rem;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(57, 197, 29);
+
+            .green {
+                color: rgb(58, 159, 58);
+            }
+        }
+
+        .description {
+            padding: 1rem 0;
+        }
+    }
+
+    .add {
+        width: calc(30% - 2rem);
+        text-align: end;
+    }
+}
+
+.details {
+    background-color: lightgrey;
+    padding: 2rem 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .talent,.specs {
+            width: 48%;
+        }
+
+        h3 {
+            padding: 1rem 0;
+        }
+
+        .row {
+            border-top: 1px solid grey;
+            border-bottom: 1px solid grey;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+
+            .body {
+                width: 70%;
+            }
+        }
+        
+    }
+}

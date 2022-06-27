@@ -66,26 +66,99 @@ header .bottom .container ul a {
   height: 100%;
 }
 
-main {
+.home-main {
   background-color: #1c1c1c;
-  color: white;
 }
-main .container {
+.home-main .container {
   padding: 2rem 0;
 }
-main .container .comics-wrapper {
+.home-main .container .comics-wrapper {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-main .container .comics-wrapper .card {
+.home-main .container .comics-wrapper .card {
   width: calc(16.6666666667% - 1rem);
   text-transform: uppercase;
   font-size: 0.6rem;
   margin: 1rem 0;
 }
-main .container .comics-wrapper .card .img-container {
+.home-main .container .comics-wrapper .card a {
+  color: white;
+}
+.home-main .container .comics-wrapper .card .img-container {
   padding-bottom: 1rem;
+}
+
+.thumb {
+  background-color: #0282f9;
+  height: 40px;
+}
+.thumb .img-container {
+  height: 200px;
+  position: relative;
+  top: -180px;
+}
+.thumb .img-container img {
+  width: auto;
+  height: 100%;
+}
+
+.desc-add {
+  width: 100%;
+}
+.desc-add .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.desc-add .desc {
+  width: 70%;
+}
+.desc-add .desc h2 {
+  text-transform: uppercase;
+  color: #0282f9;
+}
+.desc-add .desc .availability {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(57, 197, 29);
+}
+.desc-add .desc .availability .green {
+  color: rgb(58, 159, 58);
+}
+.desc-add .desc .description {
+  padding: 1rem 0;
+}
+.desc-add .add {
+  width: calc(30% - 2rem);
+  text-align: end;
+}
+
+.details {
+  background-color: lightgrey;
+  padding: 2rem 0;
+}
+.details .container {
+  display: flex;
+  justify-content: space-between;
+}
+.details .container .talent, .details .container .specs {
+  width: 48%;
+}
+.details .container h3 {
+  padding: 1rem 0;
+}
+.details .container .row {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.details .container .row .body {
+  width: 70%;
 }
 
 footer .upper {

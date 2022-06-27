@@ -18,3 +18,9 @@ Route::get('/', function () {
     $data =  ['comics_array' => $comics_array];
     return view('homepage', $data);
 })->name("home");
+
+Route::get('/comic-{id}', function ($id) {
+    $comics_array = config('comics');
+    $data =  ['comic' => $comics_array[$id]];
+    return view('single-comic', $data);
+})->name("comic");

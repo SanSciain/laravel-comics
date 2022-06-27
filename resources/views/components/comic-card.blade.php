@@ -1,6 +1,6 @@
 <div class="card">
     <div class="img-container">
-        <img src="{{ $src }}" alt="">
+        <img src="{{ $src }}" alt="{{ $title }}">
     </div>
-    <span>{{ $title }}</span>
+    <a href="{{ route('comic', ['id' => $id]) }}">{{ $title }}</a>
 </div>
